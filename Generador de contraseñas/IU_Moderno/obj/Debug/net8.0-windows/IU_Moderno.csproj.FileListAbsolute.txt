@@ -1,0 +1,56 @@
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno\IU_Moderno\bin\Debug\net8.0-windows\IU_Moderno.exe
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno\IU_Moderno\bin\Debug\net8.0-windows\IU_Moderno.deps.json
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno\IU_Moderno\bin\Debug\net8.0-windows\IU_Moderno.runtimeconfig.json
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno\IU_Moderno\bin\Debug\net8.0-windows\IU_Moderno.dll
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno\IU_Moderno\bin\Debug\net8.0-windows\IU_Moderno.pdb
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.Form1.resources
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.csproj.GenerateResource.cache
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.AssemblyInfoInputs.cache
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.AssemblyInfo.cs
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.dll
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno\IU_Moderno\obj\Debug\net8.0-windows\refint\IU_Moderno.dll
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.pdb
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.genruntimeconfig.cache
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno\IU_Moderno\obj\Debug\net8.0-windows\ref\IU_Moderno.dll
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.Paneles_del_contenedor.FormContador.resources
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.Paneles_del_contenedor.FormGenerador.resources
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno - copia - copia\IU_Moderno\bin\Debug\net8.0-windows\IU_Moderno.exe
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno - copia - copia\IU_Moderno\bin\Debug\net8.0-windows\IU_Moderno.deps.json
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno - copia - copia\IU_Moderno\bin\Debug\net8.0-windows\IU_Moderno.runtimeconfig.json
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno - copia - copia\IU_Moderno\bin\Debug\net8.0-windows\IU_Moderno.dll
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno - copia - copia\IU_Moderno\bin\Debug\net8.0-windows\IU_Moderno.pdb
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno - copia - copia\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.Form1.resources
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno - copia - copia\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.Paneles_del_contenedor.FormContador.resources
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno - copia - copia\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.Paneles_del_contenedor.FormGenerador.resources
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno - copia - copia\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.csproj.GenerateResource.cache
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno - copia - copia\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno - copia - copia\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.AssemblyInfoInputs.cache
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno - copia - copia\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.AssemblyInfo.cs
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno - copia - copia\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno - copia - copia\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.dll
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno - copia - copia\IU_Moderno\obj\Debug\net8.0-windows\refint\IU_Moderno.dll
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno - copia - copia\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.pdb
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno - copia - copia\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.genruntimeconfig.cache
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno - copia - copia\IU_Moderno\obj\Debug\net8.0-windows\ref\IU_Moderno.dll
+C:\Users\Gabriel\Documents\Proyectos C#\IU_Moderno - copia - copia\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.Properties.Resources.resources
+C:\Users\Gabriel\Documents\Proyectos C#\Generador de contraseñas\IU_Moderno\bin\Debug\net8.0-windows\IU_Moderno.exe
+C:\Users\Gabriel\Documents\Proyectos C#\Generador de contraseñas\IU_Moderno\bin\Debug\net8.0-windows\IU_Moderno.deps.json
+C:\Users\Gabriel\Documents\Proyectos C#\Generador de contraseñas\IU_Moderno\bin\Debug\net8.0-windows\IU_Moderno.runtimeconfig.json
+C:\Users\Gabriel\Documents\Proyectos C#\Generador de contraseñas\IU_Moderno\bin\Debug\net8.0-windows\IU_Moderno.dll
+C:\Users\Gabriel\Documents\Proyectos C#\Generador de contraseñas\IU_Moderno\bin\Debug\net8.0-windows\IU_Moderno.pdb
+C:\Users\Gabriel\Documents\Proyectos C#\Generador de contraseñas\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.Form1.resources
+C:\Users\Gabriel\Documents\Proyectos C#\Generador de contraseñas\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.Paneles_del_contenedor.FormContador.resources
+C:\Users\Gabriel\Documents\Proyectos C#\Generador de contraseñas\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.Paneles_del_contenedor.FormGenerador.resources
+C:\Users\Gabriel\Documents\Proyectos C#\Generador de contraseñas\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.Properties.Resources.resources
+C:\Users\Gabriel\Documents\Proyectos C#\Generador de contraseñas\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.csproj.GenerateResource.cache
+C:\Users\Gabriel\Documents\Proyectos C#\Generador de contraseñas\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabriel\Documents\Proyectos C#\Generador de contraseñas\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.AssemblyInfoInputs.cache
+C:\Users\Gabriel\Documents\Proyectos C#\Generador de contraseñas\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.AssemblyInfo.cs
+C:\Users\Gabriel\Documents\Proyectos C#\Generador de contraseñas\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel\Documents\Proyectos C#\Generador de contraseñas\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.dll
+C:\Users\Gabriel\Documents\Proyectos C#\Generador de contraseñas\IU_Moderno\obj\Debug\net8.0-windows\refint\IU_Moderno.dll
+C:\Users\Gabriel\Documents\Proyectos C#\Generador de contraseñas\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.pdb
+C:\Users\Gabriel\Documents\Proyectos C#\Generador de contraseñas\IU_Moderno\obj\Debug\net8.0-windows\IU_Moderno.genruntimeconfig.cache
+C:\Users\Gabriel\Documents\Proyectos C#\Generador de contraseñas\IU_Moderno\obj\Debug\net8.0-windows\ref\IU_Moderno.dll
