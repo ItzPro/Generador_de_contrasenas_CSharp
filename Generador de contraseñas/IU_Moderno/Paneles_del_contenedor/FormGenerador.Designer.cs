@@ -45,6 +45,9 @@
             btn_Copiar = new Controles.Boton_Personalizado();
             Tamano = new TextBox();
             label1 = new Label();
+            CK_Custom = new Controles.Checkbox_Personalizado();
+            label11 = new Label();
+            custom_characters = new TextBox();
             SuspendLayout();
             // 
             // btn_Generar
@@ -61,6 +64,8 @@
             btn_Generar.ForeColor = Color.White;
             btn_Generar.Location = new Point(664, 434);
             btn_Generar.Name = "btn_Generar";
+            btn_Generar.OnPressBackColor = Color.FromArgb(40, 96, 144);
+            btn_Generar.OnPressForeColor = Color.White;
             btn_Generar.Size = new Size(150, 40);
             btn_Generar.TabIndex = 28;
             btn_Generar.Text = "Generar";
@@ -133,6 +138,7 @@
             CK_Caracteres.Size = new Size(45, 22);
             CK_Caracteres.TabIndex = 23;
             CK_Caracteres.UseVisualStyleBackColor = true;
+            CK_Caracteres.CheckedChanged += CK_Caracteres_CheckedChanged;
             // 
             // label9
             // 
@@ -254,6 +260,8 @@
             btn_Copiar.ForeColor = Color.White;
             btn_Copiar.Location = new Point(495, 434);
             btn_Copiar.Name = "btn_Copiar";
+            btn_Copiar.OnPressBackColor = Color.FromArgb(40, 96, 144);
+            btn_Copiar.OnPressForeColor = Color.White;
             btn_Copiar.Size = new Size(150, 40);
             btn_Copiar.TabIndex = 30;
             btn_Copiar.Text = "Copiar";
@@ -289,12 +297,56 @@
             label1.TabIndex = 32;
             label1.Text = "Tamaño";
             // 
+            // CK_Custom
+            // 
+            CK_Custom.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            CK_Custom.AutoSize = true;
+            CK_Custom.Location = new Point(62, 234);
+            CK_Custom.MinimumSize = new Size(45, 22);
+            CK_Custom.Name = "CK_Custom";
+            CK_Custom.OffBackColor = Color.Gray;
+            CK_Custom.OffToggleColor = Color.Gainsboro;
+            CK_Custom.OnBackColor = Color.DodgerBlue;
+            CK_Custom.OnToggleColor = Color.WhiteSmoke;
+            CK_Custom.Size = new Size(45, 22);
+            CK_Custom.TabIndex = 33;
+            CK_Custom.UseVisualStyleBackColor = true;
+            CK_Custom.CheckedChanged += CK_Custom_CheckedChanged;
+            // 
+            // label11
+            // 
+            label11.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            label11.ForeColor = SystemColors.Control;
+            label11.Location = new Point(62, 199);
+            label11.Name = "label11";
+            label11.Size = new Size(208, 21);
+            label11.TabIndex = 34;
+            label11.Text = "Caracteres personalizados";
+            // 
+            // custom_characters
+            // 
+            custom_characters.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            custom_characters.BackColor = Color.FromArgb(46, 46, 46);
+            custom_characters.BorderStyle = BorderStyle.FixedSingle;
+            custom_characters.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            custom_characters.ForeColor = SystemColors.Control;
+            custom_characters.Location = new Point(62, 274);
+            custom_characters.Name = "custom_characters";
+            custom_characters.Size = new Size(218, 29);
+            custom_characters.TabIndex = 35;
+            custom_characters.Text = "!@#$%^&*()_+-=[]{}|;:'\\\",.<>?";
+            // 
             // FormGenerador
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(26, 26, 26);
             ClientSize = new Size(837, 511);
+            Controls.Add(custom_characters);
+            Controls.Add(label11);
+            Controls.Add(CK_Custom);
             Controls.Add(label1);
             Controls.Add(Tamano);
             Controls.Add(btn_Copiar);
@@ -337,5 +389,8 @@
         private Controles.Boton_Personalizado btn_Copiar;
         private TextBox Tamano;
         private Label label1;
+        private Controles.Checkbox_Personalizado CK_Custom;
+        private Label label11;
+        private TextBox custom_characters;
     }
 }

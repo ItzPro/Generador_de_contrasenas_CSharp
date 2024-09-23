@@ -37,7 +37,6 @@
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label1.ForeColor = SystemColors.Control;
@@ -49,7 +48,6 @@
             // 
             // label2
             // 
-            label2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label2.ForeColor = SystemColors.Control;
@@ -84,6 +82,8 @@
             btn_Contar.ForeColor = Color.White;
             btn_Contar.Location = new Point(652, 440);
             btn_Contar.Name = "btn_Contar";
+            btn_Contar.OnPressBackColor = Color.FromArgb(40, 96, 144);
+            btn_Contar.OnPressForeColor = Color.White;
             btn_Contar.Size = new Size(150, 40);
             btn_Contar.TabIndex = 36;
             btn_Contar.Text = "Contar";

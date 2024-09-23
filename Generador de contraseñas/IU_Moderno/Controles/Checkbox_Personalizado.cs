@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -13,111 +12,74 @@ namespace IU_Moderno.Controles
 {
     public class Checkbox_Personalizado : CheckBox
     {
-        //Variables
+        // Variables
         private Color onBackColor = Color.RoyalBlue;
         private Color onToggleColor = Color.WhiteSmoke;
         private Color offBackColor = Color.Gray;
         private Color offToggleColor = Color.Gainsboro;
         private bool solidStyle = true;
 
-        //Properties
+        private System.Windows.Forms.Timer animationTimer;
+        private int togglePosition;
+        private const int animationInterval = 1;
+        private const int toggleSpeed = 4;
+
+        // Propiedades
         [Category("Checkbox Atributos")]
         public Color OnBackColor
         {
-            get
-            {
-                return onBackColor;
-            }
-
-            set
-            {
-                onBackColor = value;
-                this.Invalidate();
-            }
+            get { return onBackColor; }
+            set { onBackColor = value; this.Invalidate(); }
         }
 
         [Category("Checkbox Atributos")]
         public Color OnToggleColor
         {
-            get
-            {
-                return onToggleColor;
-            }
-
-            set
-            {
-                onToggleColor = value;
-                this.Invalidate();
-            }
+            get { return onToggleColor; }
+            set { onToggleColor = value; this.Invalidate(); }
         }
 
         [Category("Checkbox Atributos")]
         public Color OffBackColor
         {
-            get
-            {
-                return offBackColor;
-            }
-
-            set
-            {
-                offBackColor = value;
-                this.Invalidate();
-            }
+            get { return offBackColor; }
+            set { offBackColor = value; this.Invalidate(); }
         }
 
         [Category("Checkbox Atributos")]
         public Color OffToggleColor
         {
-            get
-            {
-                return offToggleColor;
-            }
-
-            set
-            {
-                offToggleColor = value;
-                this.Invalidate();
-            }
+            get { return offToggleColor; }
+            set { offToggleColor = value; this.Invalidate(); }
         }
 
         [Browsable(false)]
         public override string Text
         {
-            get
-            {
-                return base.Text;
-            }
-
-            set
-            {
-
-            }
+            get { return base.Text; }
+            set { }
         }
 
         [Category("Checkbox Atributos")]
         [DefaultValue(true)]
         public bool SolidStyle
         {
-            get
-            {
-                return solidStyle;
-            }
-
-            set
-            {
-                solidStyle = value;
-                this.Invalidate();
-            }
+            get { return solidStyle; }
+            set { solidStyle = value; this.Invalidate(); }
         }
 
-        //Constructor
+        // Constructor
         public Checkbox_Personalizado()
         {
             this.MinimumSize = new Size(45, 22);
+            togglePosition = this.Checked ? this.Width - this.Height + 1 : 2;
+
+            animationTimer = new System.Windows.Forms.Timer();
+            animationTimer.Interval = animationInterval;
+            animationTimer.Tick += new EventHandler(AnimationTimer_Tick);
         }
 
-        //Methods
+        // Métodos
         private GraphicsPath GetFigurePath()
         {
             int arcSize = this.Height - 1;
@@ -137,28 +99,62 @@ namespace IU_Moderno.Controles
         {
             int toggleSize = this.Height - 5;
             pevent.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
-            pevent.Graphics.Clear(this.Parent.BackColor);
+            pevent.Graphics.FillRectangle(new SolidBrush(this.Parent.BackColor), this.ClientRectangle);
 
-            if (this.Checked) //ON
+            if (this.Checked) // ON
             {
-                //Dibujar el control
                 if (solidStyle)
                     pevent.Graphics.FillPath(new SolidBrush(onBackColor), GetFigurePath());
-                else pevent.Graphics.DrawPath(new Pen(onBackColor, 2), GetFigurePath());
-                //Draw the toggle
-                pevent.Graphics.FillEllipse(new SolidBrush(onToggleColor),
-                    new Rectangle(this.Width - this.Height + 1, 2, toggleSize, toggleSize));
+                else
+                    pevent.Graphics.DrawPath(new Pen(onBackColor, 2), GetFigurePath());
             }
-            else //OFF
+            else // OFF
             {
-                //Draw the control surface
                 if (solidStyle)
                     pevent.Graphics.FillPath(new SolidBrush(offBackColor), GetFigurePath());
-                else pevent.Graphics.DrawPath(new Pen(offBackColor, 2), GetFigurePath());
-                //Draw the toggle
-                pevent.Graphics.FillEllipse(new SolidBrush(offToggleColor),
-                    new Rectangle(2, 2, toggleSize, toggleSize));
+                else
+                    pevent.Graphics.DrawPath(new Pen(offBackColor, 2), GetFigurePath());
             }
+
+            pevent.Graphics.FillEllipse(new SolidBrush(this.Checked ? onToggleColor : offToggleColor),
+                new Rectangle(togglePosition, 2, toggleSize, toggleSize));
+        }
+
+        protected override void OnCheckedChanged(EventArgs e)
+        {
+            base.OnCheckedChanged(e);
+            StartToggleAnimation();
+        }
+
+        private void StartToggleAnimation()
+        {
+            animationTimer.Start();
+        }
+
+        private void AnimationTimer_Tick(object sender, EventArgs e)
+        {
+            int targetPosition = this.Checked ? this.Width - this.Height + 1 : 2;
+
+            if (togglePosition < targetPosition)
+            {
+                togglePosition += toggleSpeed;
+                if (togglePosition >= targetPosition)
+                {
+                    togglePosition = targetPosition;
+                    animationTimer.Stop();
+                }
+            }
+            else if (togglePosition > targetPosition)
+            {
+                togglePosition -= toggleSpeed;
+                if (togglePosition <= targetPosition)
+                {
+                    togglePosition = targetPosition;
+                    animationTimer.Stop();
+                }
+            }
+
+            this.Invalidate();
         }
     }
 }

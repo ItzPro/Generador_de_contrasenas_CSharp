@@ -39,6 +39,7 @@ namespace IU_Moderno.Paneles_del_contenedor
             string letras = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
             string numeros = "0123456789";
             string caracteresEspeciales = "!@#$%^&*()_+-=[]{}|;:'\",.<>?";
+            string customCaracteres = custom_characters.Text;
 
             // Construir la cadena de caracteres permitidos según los CheckBox seleccionados
             string caracteresPermitidos = "";
@@ -58,9 +59,14 @@ namespace IU_Moderno.Paneles_del_contenedor
                 caracteresPermitidos += caracteresEspeciales;
             }
 
+            if (CK_Custom.Checked)
+            {
+                caracteresPermitidos += customCaracteres;
+            }
+
             // Obtener el tamaño especificado en el TextBox
             int tamano;
-            if (int.TryParse(Tamano.Text, out tamano) && tamano > 0 && (CK_Letras.Checked || CK_Numeros.Checked || CK_Caracteres.Checked))
+            if (int.TryParse(Tamano.Text, out tamano) && tamano > 0 && (CK_Letras.Checked || CK_Numeros.Checked || CK_Caracteres.Checked || CK_Custom.Checked))
             {
                 // Generar la cadena aleatoria
                 Random random = new Random();
@@ -90,6 +96,28 @@ namespace IU_Moderno.Paneles_del_contenedor
             {
                 MessageBox.Show("No hay texto para copiar.");
             }
+        }
+
+        private void CK_Custom_CheckedChanged(object sender, EventArgs e)
+        {
+
+            if (CK_Custom.Checked)
+            {
+                CK_Caracteres.Checked = false;
+            }
+
+
+        }
+
+        private void CK_Caracteres_CheckedChanged(object sender, EventArgs e)
+        {
+
+            if (CK_Caracteres.Checked)
+            {
+                CK_Custom.Checked = false;
+            }
+
+
         }
     }
 }
